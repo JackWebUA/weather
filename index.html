@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather</title>
+
+  <link rel="icon" href="img/weather.ico" sizes="64x64">
+  <link rel="apple-touch-icon-precomposed" href="img/weather.ico" sizes="64x64">
+  <link rel="msapplication-square64x64logo" href="img/weather.ico" sizes="64x64">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+  <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="bg"></section>
+  <section class="weather">
+    <div class="container weather-container">
+      <div class="row">
+        <div class="col-6">
+          <select class="form-select city-select" aria-label="Default select example">
+            <option selected value="703448">Kyiv,
+              UA</option>
+            <option value="6356055">Barcelona,
+              ES</option>
+            <option value="7530768">Krakuw,
+              PL</option>
+            <option value="1689969">San Francisco,
+              US</option>
+            <option value="1819729">Hong Kong,
+              HK</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <h1 class="city"></h1>
+        </div>
+        <div class="col">
+          <div class="details">
+            <span class="date"></span>
+            <div class="sun">
+              <i class="wi wi-sunrise"></i>
+              <span class="sunrise"></span>
+              <i class="wi wi-sunset"></i>
+              <span class="sunset"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="weather-card">
+            <div class="info">
+              <span class="info-icon"></span>
+              <span class="info-temp"></span>
+            </div>
+            <div class="wind">
+              <span class="wind-speed"></span>
+              <span class="wind-direction"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="hourly-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/moment.js"></script>
+  <script src="js/moment-timezone-with-data.min.js"></script>
+  <script src="js/script_ai.js"></script>
+</body>
+
+</html>
